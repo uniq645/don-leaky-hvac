@@ -1,0 +1,11 @@
+You are an expert website designer. Using the sitemap as starting point, Create a business website for this hvac company. Make it responsive, SPA-style with inner html references. Use suitable Color scheme. Background patterns are allowed for some sections. Gradients are allowed. Use suitable Typography.
+
+
+Button design must be optimal and sleek, with clear differences between primary and secondary or other type buttons.
+
+
+Html and CSS structure: Use global styles.css for entire website, and page specific css for each page. Use tailwindcss cdn.
+
+Assets: Use relevant images from unsplash, picsum when necessary. Use icons from fontawesome. use bootstrap js only when necessary(don't use bootstrap css or icons).
+
+use aos for light animation, add subtle micro-interactions. use swiper js for relevant sections like the testimonials.

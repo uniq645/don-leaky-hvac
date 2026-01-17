@@ -1,0 +1,115 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #0B213E;
+    /* Navy Blue */
+    --secondary-color: #FFC93E;
+    /* Bright Yellow */
+    --text-dark: #0B213E;
+    --text-light: #F8FAFC;
+    --text-gray: #64748b;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+/* Custom Utilities */
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    /* squarer borders as per image */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6b430;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-title::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* WhatsApp Widget */
+.whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-widget:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 30px;
+}

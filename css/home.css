@@ -1,0 +1,93 @@
+/* Home Page Specific Styles */
+
+/* Hero */
+.hero-wrapper {
+    position: relative;
+    height: 85vh;
+    /* Taller hero */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(11, 33, 62, 0.7), rgba(11, 33, 62, 0.6)), url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Stats Bar */
+.stats-bar {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    margin-top: -40px;
+    /* Reduced from -80px */
+    position: relative;
+    z-index: 20;
+}
+
+@media (min-width: 768px) {
+    .stats-bar {
+        margin-top: -40px;
+        /* Reduced from -80px to fix overlap on desktop */
+    }
+}
+
+/* About Section Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 200px 200px;
+        gap: 1.5rem;
+    }
+
+    .about-img-1 {
+        grid-row: span 2;
+    }
+
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Services Split Layout */
+.service-icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: rgba(11, 33, 62, 0.05);
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.service-item:hover .service-icon-box {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Wavy Backgrounds */
+.wave-bg-bottom {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230B213E' fill-opacity='1' d='M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}

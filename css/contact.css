@@ -1,0 +1,11 @@
+/* Contact Page Specific Styles */
+.contact-form-container {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    ring: 2px solid var(--primary-color);
+}
