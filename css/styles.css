@@ -12,10 +12,13 @@
     --white: #ffffff;
 }
 
+html,
 body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
     font-family: 'Manrope', sans-serif;
     color: var(--text-dark);
-    overflow-x: hidden;
 }
 
 h1,
